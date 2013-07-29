@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Things to Do</title>
+    <style>
+      html, body, #map{
+      height:100%;
+      }
+      #map img {
+      max-width: none;
+      }
+/* http://css-tricks.com/snippets/css/truncate-string-with-ellipsis/ */
+      .truncate {
+      width: 250px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      }
+    </style>
+    <link type="text/css" rel="stylesheet" href="bootstrap.min.css"/>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUC9VWHP1FfCpjU5Rs-wpN7vRwSFp4-bw&sensor=true&libraries=places">
+        </script>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span4">
+          <a href="#" class="btn btn-primary btn-large">Explore</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="map"></div>
+  </body>
+</html>
