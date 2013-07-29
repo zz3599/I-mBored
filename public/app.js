@@ -29,12 +29,11 @@ $(document).ready(function(){
             title: "You're here",
             icon: 'green_MarkerH.png'
         });
-        google.maps.event.addListener(marker, 'domready', function(){
-            herewindow = new google.maps.InfoWindow({
-                content: "You're here"
-            }).open(map, marker);
+        herewindow = new google.maps.InfoWindow({
+            content: "You're here"
+        }).open(map, marker);
 
-        });
+
         var query = placesurl + "?lat=" + lat + "&lon=" + long + "&radius=10&format=json&publisher=test&tag=1023";
         //fuck cell phone companies
         var ignores = {527: true, 528: true, 10487: true, 1425: true};
